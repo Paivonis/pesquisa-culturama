@@ -10,7 +10,7 @@
         <h1>Pesquisa Online</h1>
         <section>
             <form action="" method="get">
-                <fieldset>
+                <!-- <fieldset>
                     <legend>Informações Pessoais</legend>
                     <label for="user-name">Nome do Usuário:</label>
                     <input type="text" name="username" required><br>
@@ -23,14 +23,36 @@
                 <label for="userEmail">Email:</label>
                 <input type="email" name="userEmail" required> <br>
                 
-            
                 <label for="userNumeber">Número de Telefone:</label>
                 <input type="tel" name="userNumber" pattern="[0-9]{11}" placeholder="Ex: 11987654321">
                 <br>
                  <label for="userImage">Upload de Imagem:</label>
-                <input type="file" accept="image/*" name="userImage">
-                <button type="submit">Pesquisar</button>
-                <br>
+                <input type="file" accept="image/*" name="userImage"> -->
+              
+
+        <fieldset>
+        <legend>Perfil</legend>
+
+        <p>Gênero:</p>
+
+        <input type="radio" name="userGender"
+         value="masculino">
+        <label>Masculino</label>
+
+        <input type="radio" name="userGender"
+         value="feminino">
+        <label>Feminino</label>
+
+        <input type="radio" name="userGender"
+         value="Not informed">
+        <label>Prefiro não informar</label>
+        </fieldset> 
+              
+              
+              
+         <button type="submit">Pesquisar</button>
+         <br>
             </form>
+
         </section>
     </header>
