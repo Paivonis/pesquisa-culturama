@@ -12,22 +12,22 @@
             <form action="" method="get">
                 <fieldset>
                     <legend>Informações Pessoais</legend>
-                    <label for="user-name">Nome do Usuário:</label>
-                    <input type="text" name="username" required><br>
+                    <label for="username">Nome do Usuário:</label>
+                    <input  id="username" name="username" required><br>
                     <label for="age">Idade:</label>
-                    <input type="number" name="age" min="12" max="100" required>
+                    <input  id="age" name="age" min="12" max="100" required>
                     <br>
                 <label for="birthDate">Data de Nascimento:</label>
-                <input type="date" name="birthDate"><br>
+                <input  id="birthDate" type="date" name="birthDate"><br>
                    
                 <label for="userEmail">Email:</label>
-                <input type="email" name="userEmail" required> <br>
+                <input id="userEmail" type="email" name="userEmail" required> <br>
                 
-                <label for="userNumeber">Número de Telefone:</label>
-                <input type="tel" name="userNumber" pattern="[0-9]{11}" placeholder="Ex: 11987654321">
+                <label for="userNumber">Número de Telefone:</label>
+                <input id="userNumber" type="tel" name="userNumber" pattern="[0-9]{11}" placeholder="Ex: 11987654321">
                 <br>
                  <label for="userImage">Upload de Imagem:</label>
-                <input type="file" accept="image/*" name="userImage"> -->
+                <input id="userImage" type="file" accept="image/*" name="userImage"> 
               
 
         <fieldset>
@@ -35,21 +35,21 @@
 
         <p>Gênero:</p>
 
-        <input type="radio" name="userGender"
+        <input id="masculino" type="radio" name="userGender"
          value="masculino">
-        <label>Masculino</label>
+        <label for="masculino">Masculino</label>
 
-        <input type="radio" name="userGender"
+        <input id="feminino" type="radio" name="userGender"
          value="feminino">
-        <label>Feminino</label>
+        <label for="feminino">Feminino</label>
 
-        <input type="radio" name="userGender"
+        <input id="naoInformado" type="radio" name="userGender"
          value="Not informed">
-        <label>Prefiro não informar</label>
+        <label for="naoInformado">Prefiro não informar</label>
         <br>
           
             <label for="Marital Status">Estado Civil:</label>
-    <select name="Marital Status" id="">
+    <select name="Marital Status" id="Marital Status">
         <option value="NotInformed">Selecione</option>       
         <option value="Casado">Casado</option>
         <option value="Solteiro">Solteiro</option>
@@ -59,7 +59,7 @@
     </select>
     
         <label for="States">Estado:</label>
-<select name="States">
+<select name="States" id="States">
     <option value="">Selecione</option>
     <option value="Acre">Acre</option>
     <option value="Amapá">Amapá</option>
@@ -101,7 +101,7 @@
 </select>
 
 
-            </fieldset> -->
+         </fieldset> 
         
     
     <fieldset>
@@ -135,5 +135,5 @@
 </header>
 
 
-    
+
        
