@@ -59,7 +59,7 @@
     </select>
     
         <label for="States">Estado:</label>
-<select name="States" id="States">
+    <select name="States" id="States">
     <option value="">Selecione</option>
     <option value="Acre">Acre</option>
     <option value="Amapá">Amapá</option>
@@ -127,7 +127,17 @@
 
     <input type="checkbox" id="tiktok" name="social[]" value="TikTok">
     <label for="tiktok">TikTok</label>
-
+     <br>
+    <label for="MusicStyle">Estilo Musical:</label>
+    <datalist id="musicStyles">
+        <option value="Pop">
+        <option value="Rock">
+        <option value="Jazz">
+        <option value="Eletrônica">
+        <option value="Samba">
+        <option value="Reggae">
+    </datalist>
+    <input type="text" id="MusicStyle" name="MusicStyle" list="musicStyles" placeholder="Digite seu estilo musical favorito">
 </fieldset>
 
 <button type="submit">Pesquisar</button>
