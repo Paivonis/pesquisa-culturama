@@ -1,178 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/culturama-favico.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="assets/culturama-favico.png" type="image/png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Pesquisa Culturama</title>
-</head>
-<body>
-    <header>
-       <img src="assets/logo-culturama.png" alt="Logo Culturama">
+  </head>
+
+  <body>
+    <main>
+
+      <header>
+        <img src="assets/logo-culturama.png" alt="Logo Culturama" />
         <h1>Pesquisa Online</h1>
-        <section>
-            <form action="" method="get">
-                <fieldset>
-                    <legend>Informações Pessoais</legend>
-                    <label for="username">Nome do Usuário:</label>
-                    <input  id="username" name="username" required><br>
-                    <label for="age">Idade:</label>
-                    <input  id="age" name="age" min="12" max="100" required>
-                    <br>
-                <label for="birthDate">Data de Nascimento:</label>
-                <input  id="birthDate" type="date" name="birthDate"><br>
-                   
-                <label for="userEmail">Email:</label>
-                <input id="userEmail" type="email" name="userEmail" required> <br>
-                
-                <label for="userNumber">Número de Telefone:</label>
-                <input id="userNumber" type="tel" name="userNumber" pattern="[0-9]{11}" placeholder="Ex: 11987654321">
-                <br>
-                 <label for="userImage">Upload de Imagem:</label>
-                <input id="userImage" type="file" accept="image/*" name="userImage"> 
-              
+      </header>
 
-        <fieldset>
-        <legend>Perfil</legend>
+      <section>
+        <form action="" method="get">
 
-        <p>Gênero:</p>
+          <fieldset>
+            <legend>Informações Pessoais</legend>
 
-        <input id="masculino" type="radio" name="userGender"
-         value="masculino">
-        <label for="masculino">Masculino</label>
+            <label for="username">Nome do Usuário:</label>
+            <input type="text" id="username" name="username" required />
+            <br /><br />
 
-        <input id="feminino" type="radio" name="userGender"
-         value="feminino">
-        <label for="feminino">Feminino</label>
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" min="12" max="100" required />
+            <br /><br />
 
-        <input id="naoInformado" type="radio" name="userGender"
-         value="Not informed">
-        <label for="naoInformado">Prefiro não informar</label>
-        <br>
-          
-            <label for="Marital Status">Estado Civil:</label>
-    <select name="Marital Status" id="Marital Status">
-        <option value="NotInformed">Selecione</option>       
-        <option value="Casado">Casado</option>
-        <option value="Solteiro">Solteiro</option>
-        <option value="Divorciado">Divorciado</option>
-        <option value="Viúvo">Viúvo</option>
-        <option value="União Estável">União Estável</option>
-    </select>
-    
-        <label for="States">Estado:</label>
-    <select name="States" id="States">
-    <option value="">Selecione</option>
-    <option value="Acre">Acre</option>
-    <option value="Amapá">Amapá</option>
-    <option value="Amazonas">Amazonas</option>
-    <option value="Bahia">Bahia</option>
-    <option value="Ceará">Ceará</option>
-    <option value="Distrito Federal">Distrito Federal</option>
-    <option value="Espírito Santo">Espírito Santo</option>
-    <option value="Goiás">Goiás</option>
-    <option value="Maranhão">Maranhão</option>
-    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-    <option value="Mato Grosso">Mato Grosso</option>
-    <option value="Minas Gerais">Minas Gerais</option>
-    <option value="Pará">Pará</option>
-    <option value="Paraíba">Paraíba</option>
-    <option value="Paraná">Paraná</option>
-    <option value="Pernambuco">Pernambuco</option>
-    <option value="Piauí">Piauí</option>
-    <option value="Rio de Janeiro">Rio de Janeiro</option>
-    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-    <option value="Rondônia">Rondônia</option>
-    <option value="Roraima">Roraima</option>
-    <option value="Santa Catarina">Santa Catarina</option>
-    <option value="São Paulo">São Paulo</option>
-    <option value="Sergipe">Sergipe</option>
-    <option value="Tocantins">Tocantins</option>
-</select>
+            <label for="birthDate">Data de Nascimento:</label>
+            <input type="date" id="birthDate" name="birthDate" />
+            <br /><br />
 
-<br><br>
+            <label for="userEmail">Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required />
+            <br /><br />
 
-<label for="cidade">Cidade:</label>
-<input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
-</select>
+            <label for="userNumber">Número de Telefone:</label>
+            <input
+              type="tel"
+              id="userNumber"
+              name="userNumber"
+              pattern="[0-9]{11}"
+              placeholder="Ex: 11987654321"
+            />
+            <br /><br />
 
-<br><br>
+            <label for="userImage">Upload de Imagem:</label>
+            <input
+              type="file"
+              id="userImage"
+              name="userImage"
+              accept="image/*"
+            />
+          </fieldset>
 
+          <fieldset>
+            <legend>Perfil</legend>
 
-</select>
+            <p>Gênero:</p>
 
+            <input
+              type="radio"
+              id="masculino"
+              name="userGender"
+              value="masculino"
+            />
+            <label for="masculino">Masculino</label>
 
-         </fieldset> 
-        
-    
-    <fieldset>
-    <legend>Hábitos</legend>
+            <input
+              type="radio"
+              id="feminino"
+              name="userGender"
+              value="feminino"
+            />
+            <label for="feminino">Feminino</label>
 
-    <p>Redes Sociais:</p>       
+            <input
+              type="radio"
+              id="naoInformado"
+              name="userGender"
+              value="Not informed"
+            />
+            <label for="naoInformado">Prefiro não informar</label>
 
-    <input type="checkbox" id="instagram" name="social[]" value="Instagram">
-    <label for="instagram">Instagram</label>
-    <br>
+            <br /><br />
 
-    <input type="checkbox" id="facebook" name="social[]" value="Facebook">
-    <label for="facebook">Facebook</label>
-    <br>
+            <label for="maritalStatus">Estado Civil:</label>
 
-    <input type="checkbox" id="twitter" name="social[]" value="Twitter">
-    <label for="twitter">Twitter</label>
-    <br>
+            <select name="maritalStatus" id="maritalStatus">
+              <option value="">Selecione</option>
+              <option value="Casado">Casado</option>
+              <option value="Solteiro">Solteiro</option>
+              <option value="Divorciado">Divorciado</option>
+              <option value="Viúvo">Viúvo</option>
+              <option value="União Estável">União Estável</option>
+            </select>
 
-    <input type="checkbox" id="linkedin" name="social[]" value="LinkedIn">
-    <label for="linkedin">LinkedIn</label>
-    <br>
+            <br /><br />
 
-    <input type="checkbox" id="tiktok" name="social[]" value="TikTok">
-    <label for="tiktok">TikTok</label>
-     <br>
-    <label for="MusicStyle">Estilo Musical:</label>
-    <datalist id="musicStyles">
-        <option value="Pop">
-        <option value="Rock">
-        <option value="Jazz">
-        <option value="Eletrônica">
-        <option value="Samba">
-        <option value="Reggae">
-    </datalist>
-    <input type="text" id="MusicStyle" name="MusicStyle" list="musicStyles" placeholder="Digite seu estilo musical favorito">
+            <label for="states">Estado:</label>
 
- <br> 
- <label for="Color">Cor Favorita:</label>
- <input type="color" id="git Color" name="userfavoriteColor">
-</fieldset>
+            <select name="states" id="states">
+              <option value="">Selecione</option>
+              <option value="São Paulo">São Paulo</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+              <option value="Minas Gerais">Minas Gerais</option>
+              <option value="Bahia">Bahia</option>
+            </select>
 
+            <br /><br />
 
-</form>   
-<fieldset>
-<legend>Opnião</legend>
-<p>Satisfação:</p>
-<input type="radio" id="muitoSatisfeito" name="satisfaction" value="Muito Satisfeito">
-<label for="ótima">Ótima</label>
-<br>
-<input type="radio" id="boa" name="satisfaction" value="Boa">
-<label for="Boa">Boa</label>
-<br>
-<input type="radio" id="insatisfeito" name="satisfaction" value="Insatisfeito">
-<label for="Insatisfeito">Insatisfeito</label>
-<br>
-<br>
-<label for="comentario">Comentário:</label>
-<textarea id="comentario" name="comentario" placeholder="Digite seu comentário"></textarea>
-<br>
-</fieldset>
+            <label for="cidade">Cidade:</label>
 
-<button type="submit">Pesquisar</button>
-</header>
+            <input
+              type="text"
+              id="cidade"
+              name="cidade"
+              placeholder="Digite sua cidade"
+            />
+          </fieldset>
 
+          <fieldset>
+            <legend>Hábitos</legend>
 
+            <p>Redes Sociais:</p>
 
-       
+            <input
+              type="checkbox"
+              id="instagram"
+              name="social[]"
+              value="Instagram"
+            />
+            <label for="instagram">Instagram</label>
+            <br />
+
+            <input
+              type="checkbox"
+              id="facebook"
+              name="social[]"
+              value="Facebook"
+            />
+            <label for="facebook">Facebook</label>
+            <br />
+
+            <input
+              type="checkbox"
+              id="twitter"
+              name="social[]"
+              value="Twitter"
+            />
+            <label for="twitter">Twitter</label>
+            <br />
+
+            <input
+              type="checkbox"
+              id="linkedin"
+              name="social[]"
+              value="LinkedIn"
+            />
+            <label for="linkedin">LinkedIn</label>
+            <br />
+
+            <input
+              type="checkbox"
+              id="tiktok"
+              name="social[]"
+              value="TikTok"
+            />
+            <label for="tiktok">TikTok</label>
+
+            <br /><br />
+
+            <label for="musicStyle">Estilo Musical:</label>
+
+            <datalist id="musicStyles">
+              <option value="Pop"></option>
+              <option value="Rock"></option>
+              <option value="Jazz"></option>
+              <option value="Eletrônica"></option>
+              <option value="Samba"></option>
+              <option value="Reggae"></option>
+            </datalist>
+
+            <input
+              type="text"
+              id="musicStyle"
+              name="musicStyle"
+              list="musicStyles"
+              placeholder="Digite seu estilo musical favorito"
+            />
+
+            <br /><br />
+
+            <label for="color">Cor Favorita:</label>
+            <input type="color" id="color" name="userfavoriteColor" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Opinião</legend>
+
+            <p>Satisfação:</p>
+
+            <input
+              type="radio"
+              id="otima"
+              name="satisfaction"
+              value="Ótima"
+            />
+            <label for="otima">Ótima</label>
+            <br />
+
+            <input
+              type="radio"
+              id="boa"
+              name="satisfaction"
+              value="Boa"
+            />
+            <label for="boa">Boa</label>
+            <br />
+
+            <input
+              type="radio"
+              id="insatisfeito"
+              name="satisfaction"
+              value="Insatisfeito"
+            />
+            <label for="insatisfeito">Insatisfeito</label>
+
+            <br /><br />
+
+            <label for="comentario">Comentário:</label>
+            <br />
+
+            <textarea
+              id="comentario"
+              name="comentario"
+              placeholder="Digite seu comentário"
+            ></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Confirmações</legend>
+
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">Aceito participar da pesquisa</label>
+            <br>
+            <input type="checkbox" id="newsletter" name="newsletter" /> 
+            <label for="newsletter">Quero receber novidades por e-mail</label>
+          </fieldset>
+
+          <button type="submit">Pesquisar</button>
+          <button type="reset">Limpar</button>
+
+        </form>
+      </section>
+
+    </main>
+  </body>
+</html>

@@ -1,8 +1,41 @@
-body {
-    font-family: 'Work Sans', sans-serif;
-   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-h1 {
-    font-family: 'Fjalla One', sans-serif;
+body{
+    font-family: "Work Sans", sans-serif;
+    background-color: #f9f9f9;
+}
+main{
+    width: 100%;
+    max-width: 700px;
+    margin:0 auto;
+}
+header{
+    h1 {
+       font-family:"fjalla one", sans-serif;
+    }
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+img {
+    whidth: 100px;
+}
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+fieldset {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px;
 }
