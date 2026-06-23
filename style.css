@@ -13,6 +13,7 @@ main{
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 header{
@@ -49,11 +50,10 @@ legend{
 }
 
 label{
-    display: inline-block;
     margin-bottom: 5px;
 }
 
-input,
+input:not([type="radio"]):not([type="checkbox"]):not([type="color"]),
 select,
 textarea{
     width: 100%;
@@ -63,7 +63,51 @@ textarea{
     border-radius: 5px;
 }
 
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+input[type="color"]{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
 textarea{
     min-height: 100px;
-    width: 100%;
+}
+
+input[type="text"]:required:invalid,
+input[type="number"]:required:invalid,
+input[type="email"]:required:invalid,
+input[type="date"]:required:invalid{
+border: 2px solid red;
+}
+
+input[type="text"]:required:valid,
+input[type="number"]:required:valid,
+input[type="email"]:required:valid,
+input[type="date"]:required:valid{
+border: 2px solid rgba(64, 240, 0, 0.59);
+}
+
+button{
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: #0056b3;
+}
+button[type="reset"]:hover{
+    background-color: #dc3545;
 }

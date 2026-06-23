@@ -21,15 +21,13 @@
 
   <body>
     <main>
-
       <header>
         <img src="assets/logo-culturama.png" alt="Logo Culturama" />
-        <h1>Pesquisa Online</h1>
+        <h1>Pesquisa de Opinião</h1>
       </header>
 
       <section>
-        <form action="" method="get">
-
+        <form action="sucesso.html" method="get">
           <fieldset>
             <legend>Informações Pessoais</legend>
 
@@ -38,11 +36,18 @@
             <br /><br />
 
             <label for="age">Idade:</label>
-            <input type="number" id="age" name="age" min="12" max="100" required />
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="12"
+              max="100"
+              required
+            />
             <br /><br />
 
             <label for="birthDate">Data de Nascimento:</label>
-            <input type="date" id="birthDate" name="birthDate" />
+            <input type="date" id="birthDate" name="birthDate" required />
             <br /><br />
 
             <label for="userEmail">Email:</label>
@@ -175,12 +180,7 @@
             <label for="linkedin">LinkedIn</label>
             <br />
 
-            <input
-              type="checkbox"
-              id="tiktok"
-              name="social[]"
-              value="TikTok"
-            />
+            <input type="checkbox" id="tiktok" name="social[]" value="TikTok" />
             <label for="tiktok">TikTok</label>
 
             <br /><br />
@@ -215,34 +215,19 @@
 
             <p>Satisfação:</p>
 
-            <input
-              type="radio"
-              id="otima"
-              name="satisfaction"
-              value="Ótima"
-            />
+            <input type="radio" id="otima" name="satisfaction" value="Ótima" />
             <label for="otima">Ótima</label>
             <br />
 
-            <input
-              type="radio"
-              id="boa"
-              name="satisfaction"
-              value="Boa"
-            />
+            <input type="radio" id="boa" name="satisfaction" value="Boa" />
             <label for="boa">Boa</label>
             <br />
-
-            <input
-              type="radio"
-              id="insatisfeito"
-              name="satisfaction"
-              value="Insatisfeito"
-            />
+            <input type="radio" id="regular" name="satisfaction" value="Regular" />
+            <label for="regular">Regular</label>
+            <br />
+            <input type="radio" id="insatisfeito" name="satisfaction" value="Insatisfeito" />
             <label for="insatisfeito">Insatisfeito</label>
-
-            <br /><br />
-
+            <br>
             <label for="comentario">Comentário:</label>
             <br />
 
@@ -258,17 +243,15 @@
 
             <input type="checkbox" id="terms" name="terms" required />
             <label for="terms">Aceito participar da pesquisa</label>
-            <br>
-            <input type="checkbox" id="newsletter" name="newsletter" /> 
+            <br />
+            <input type="checkbox" id="newsletter" name="newsletter" />
             <label for="newsletter">Quero receber novidades por e-mail</label>
           </fieldset>
 
           <button type="submit">Pesquisar</button>
           <button type="reset">Limpar</button>
-
         </form>
       </section>
-
     </main>
   </body>
 </html>
